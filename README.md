@@ -44,8 +44,9 @@ rather than by a recipient allowlist.
 
 ## Setup
 
-Prerequisites: a Cloudflare account, Node 18 or newer, and an AWS SES account
-with at least one verified identity. Wrangler comes in as a dev dependency.
+Prerequisites: a Cloudflare account, Node 22 or newer (required by Wrangler), and
+an AWS SES account with at least one verified identity. Wrangler comes in as a dev
+dependency.
 
 ```bash
 npm install
