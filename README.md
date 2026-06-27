@@ -9,6 +9,8 @@ but never delivered.
 No data is stored; every SES call is SigV4-signed in the Worker via
 [`aws4fetch`](https://github.com/mhart/aws4fetch).
 
+![mailsend: compose view and account deliverability panel](docs/screenshot.png)
+
 ## Features
 
 - Account dashboard: sandbox vs. production detection, sending enabled,
