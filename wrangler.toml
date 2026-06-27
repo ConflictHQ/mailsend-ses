@@ -1,0 +1,23 @@
+name = "mailsend"
+main = "src/index.js"
+compatibility_date = "2025-09-01"
+
+# Non-secret config. Override per-environment or via the Cloudflare dashboard.
+[vars]
+SES_REGION = "us-east-1"
+# Optional SES Configuration Set applied to every send (open/click tracking, event publishing).
+CONFIG_SET = ""
+# Comma-separated precanned recipient addresses shown as one-click chips in the UI.
+PRECANNED_RECIPIENTS = ""
+# Optional default From address (must be a verified SES identity).
+DEFAULT_FROM = ""
+
+# Secrets (set with `wrangler secret put <NAME>`, never commit):
+#   AWS_ACCESS_KEY_ID
+#   AWS_SECRET_ACCESS_KEY
+
+# Custom domain. Requires the zone to be on this Cloudflare account.
+# Uncomment and set your hostname, then `wrangler deploy`.
+# [[routes]]
+# pattern = "mailsend.example.com"
+# custom_domain = true

@@ -1,0 +1,9 @@
+# Copy to `.dev.vars` for local `wrangler dev`. NEVER commit the real file.
+AWS_ACCESS_KEY_ID=AKIA...
+AWS_SECRET_ACCESS_KEY=...
+
+# Optional local overrides of wrangler.toml [vars]
+# SES_REGION=us-east-1
+# CONFIG_SET=
+# PRECANNED_RECIPIENTS=you@example.com,team@example.com
+# DEFAULT_FROM=noreply@yourdomain.com
